@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5433/word_statistics'
+    username: postgres
+    password: password
+  jpa:
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: validate
+  jackson:
+    time-zone: UTC
+  liquibase:
+    change-log: classpath:db.changelog/changelog.xml
+    enabled: true
+server:
+  error:
+    include-message: always
+    include-exception: true
+    include-binding-errors: always
+    include-stacktrace: never
+  port: '8081'
+  servlet:
+    context-path: /api/v1.0
+logging:
+  file:
+    name: "logfile.log"
+    path: "/"
+  level:
+    ru.mels.webpagewordscounter: INFO
