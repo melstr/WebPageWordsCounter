@@ -3,7 +3,7 @@ package ru.mels.webpagewordscounter.service.impl;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.jsoup.Jsoup;
-import org.springframework.stereotype.Service;;
+import org.springframework.stereotype.Service;
 import ru.mels.webpagewordscounter.service.HtmlWordsParserService;
 
 import java.util.Arrays;
