@@ -31,10 +31,8 @@ public class HtmlWordsParserServiceImpl implements HtmlWordsParserService {
     @Override
     public Map<String, Long> parseWordsFromUrl(String URL) {
         String scrappedText = scrapeBodyTextFromWebPage(URL);
-
         /* Pattern for delimiters. Includes everything except for Latin, Cyrillic, digits and underscore */
         String delimitersRegex = "[^a-zA-Zа-яА-Я0-9_]";
-
         return Arrays.stream(scrappedText.split(delimitersRegex))
                 .filter(word ->!Objects.equals(word, ""))
                 .map(String::toUpperCase)

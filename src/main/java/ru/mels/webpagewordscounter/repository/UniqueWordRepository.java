@@ -13,6 +13,5 @@ import java.util.UUID;
  */
 public interface UniqueWordRepository extends JpaRepository<UniqueWord, UUID> {
     void deleteByURL(String URL);
-
     Page<UniqueWord> findAllByURL(String URL, Pageable pageable);
 }
