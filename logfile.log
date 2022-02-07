@@ -460,3 +460,28 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database "word_statistics" 
 2022-02-07 03:28:21.006  INFO 19664 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-02-07 03:28:21.007  INFO 19664 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-02-07 03:28:21.012  INFO 19664 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-07 03:44:58.893  INFO 2044 --- [main] r.m.w.WebpageWordsCounterApplication     : Starting WebpageWordsCounterApplication using Java 11.0.13 on DESKTOP-QQSNIQQ with PID 2044 (D:\IdeaProjects\WebpageWordsCounter\target\classes started by Mels in D:\IdeaProjects\WebpageWordsCounter)
+2022-02-07 03:44:58.894  INFO 2044 --- [main] r.m.w.WebpageWordsCounterApplication     : No active profile set, falling back to default profiles: default
+2022-02-07 03:44:59.357  INFO 2044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 03:44:59.389  INFO 2044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2022-02-07 03:44:59.704  INFO 2044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-02-07 03:44:59.710  INFO 2044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 03:44:59.710  INFO 2044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-07 03:44:59.793  INFO 2044 --- [main] o.a.c.c.C.[.[localhost].[/api/v1.0]      : Initializing Spring embedded WebApplicationContext
+2022-02-07 03:44:59.793  INFO 2044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 869 ms
+2022-02-07 03:44:59.906  INFO 2044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 03:45:00.011  INFO 2044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 03:45:00.103  INFO 2044 --- [main] liquibase.database                       : Set default schema name to public
+2022-02-07 03:45:00.156  INFO 2044 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-02-07 03:45:00.257  INFO 2044 --- [main] liquibase.changelog                      : Reading resource: db.changelog/2022.02/03-01-changelog.xml
+2022-02-07 03:45:00.446  INFO 2044 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-02-07 03:45:00.471  INFO 2044 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-02-07 03:45:00.532  INFO 2044 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 03:45:00.560  INFO 2044 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-07 03:45:00.640  INFO 2044 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 03:45:00.706  INFO 2044 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-07 03:45:01.045  INFO 2044 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 03:45:01.050  INFO 2044 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 03:45:01.334  WARN 2044 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-07 03:45:01.737  INFO 2044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/v1.0'
+2022-02-07 03:45:01.746  INFO 2044 --- [main] r.m.w.WebpageWordsCounterApplication     : Started WebpageWordsCounterApplication in 3.144 seconds (JVM running for 3.645)
